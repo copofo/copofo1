@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Encomendas</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body class="centralize">
+
+    <form>
+
+        <div class="form-fild">
+            <div><label>Email</label></div>
+            <input type="email" name="email" id="email" placeholder="exemplo@email.com" onchange="onChangeEmail()">
+            <div id="msgEmailOb">Email é obrigatório</div>
+            <div id="msgEmailIn">Email é Inválido</div>
+        </div>
+
+        <div class="form-fild">
+            <div><label>Senha</label></div>
+            <input type="password" name="senha" id="senha" placeholder="senha" onchange="onChangePassword()">
+            <div id="msgSenhaOb">Senha é obrigatória</div>
+        </div>
+
+        <div class="divButton">
+            <button onclick="login()" type="button" id="btnEntrar" disabled="true">Entrar</button>
+        </div>
+    </form>
+
+
+    <script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-app-compat.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-auth-compat.js"></script>
+    
+    <script src="script/script.js"></script>
+    <script src="script/loading.js"></script>
+    <script src="script/firebaseConfig.js"></script>
+    <script src="script/checked.js"></script>
+    
+    <a target="_blank" class="c" href="">
+        <p>&copy; Telles Jr</p>
+    </a>
+</body>
+
+
+</html>

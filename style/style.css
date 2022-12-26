@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #226681;
+
+}
+
+.centralize {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+
+.form-fild {
+  margin-bottom: 10px;
+}
+
+.divButton {
+  display: flex;
+  justify-content: center;
+}
+
+#btnEntrar {
+  margin-top: 10px;
+  width: 66px;
+  height: 22px;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  color: #226681;
+  
+}
+
+#btnEntrar:active {
+  opacity: 0.8;
+}
+
+#btnEntrar[disabled] {
+  opacity: 0.7;
+}
+
+
+
+#msgEmailIn,
+#msgEmailOb,
+#msgSenhaOb {
+  color: white;
+  background-color: red;
+  display: none;
+}
+
+.loading {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+
+}
+
+.loading label {
+  font-size: 24px;
+}
+.c{
+  color: white;
+  position: absolute;
+  bottom: 3em;
+  text-decoration: none;
+}

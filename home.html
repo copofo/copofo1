@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style/home.css">
+    
+</head>
+
+<body class="centralize" onload="verificar()">
+    <script src="script/auth-guard.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-firestore-compat.js"></script>
+    <script src="script/logout.js"></script>
+    <script src="script/script.js"></script>
+    <script src="script/loading.js"></script>
+    <script src="script/firebaseConfig.js"></script>
+    <script src="script/home.js"></script>
+    
+    
+    <header>
+        <button class="btnTop" type="button" onclick="logout()">Sair</button>
+    </header>
+    
+
+    <ol id="operation">
+        <h1>Encomendas</h1>
+        
+
+    </ol>
+    
+    <button class="fab fixed bottom right" onclick="newOperation()">+</button>
+
+    <button class="fab bottom left" onclick="recarregar()"><img src="recarregar.png" width="100%" alt=""></button>
+   
+</body>
+
+</html>

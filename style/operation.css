@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #226681;
+    height: 100vh;
+}
+
+header{
+    display: flex;
+    justify-content: end;
+}
+
+.btnTop{
+    width: 50px;
+    height: 25px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+
+.expense{
+  border-left: 2em solid red;
+}
+
+.income{
+  border-left: 2em solid green;
+}
+
+.centralize {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.loading {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+
+}
+
+.loading label {
+  font-size: 24px;
+}
+
+input{
+  border: none;
+  outline: none;
+  padding: 5px;
+}
+
+#typeEncomenda{
+  margin-bottom: 10px;
+}
+
+footer{
+  margin-top: 10px;
+  text-align: center;
+}
+
+footer > div > button{
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  margin-top: 10px;
+}
+
+.styleConcluir{
+  opacity: 0.8;
+  padding: 8px;
+  font-weight: bold;
+  background-color: #0c2630;
+  color: white;
+  border: 1px solid white;
+}
+
+div{
+  margin-top: 5px;
+}
+
+
+.error{
+  background-color: red;
+  color: white;
+  display: none;
+} 
+/* 
+#divType{
+  display: none;
+}  */
+
+#btnConcluir[disabled]{
+  opacity: 0.8;
+}
+
+.btnConcluir:active{
+  background-color: #0c2630;
+  color: white
+}
+
+.loading {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+
+}
+
+.btnRemove{
+  width: 65px;
+  border-color: red;
+  border: 1px solid red;
+  color: red;
+  position: absolute;
+  top: 0;
+  left: 0.2em;
+
+}

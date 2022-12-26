@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receber Encomenda</title>
+    <link rel="stylesheet" href="style/operation.css">
+    
+</head>
+
+<body onload="verificar()">
+    
+    
+    <header>
+        <button class="btnTop" type="button" onclick="voltar()">Voltar</button>
+    </header>
+    
+
+    <main class="centralize">
+        
+
+        <form id="opa">
+            <div><label><h1>Receber Encomenda</h1></label></div>
+            
+            <!-- ap -->
+            <div>
+                <div><label>Ap</label></div>
+
+                <input  type="number" name="ap" id="ap" onchange="onChangeAp()">
+                
+                <div class="error" id="msg-ap-required">&uarr; Ap é obrigatório</div>
+                
+            </div>
+
+            <!-- nome -->
+            <div>
+                <div><label for="">Nome</label></div>
+
+                <input type="text" name="nome" id="nome" onchange="onChangeName()">
+
+                <div class="error" id="msg-nome-required">&uarr;  Nome é obrigatório</div>
+            </div>
+
+            <!-- code -->
+            <div>
+                <div><label for="">Código</label></div>
+
+                <input type="number" name="code" id="code" placeholder="BR014942779BR" onchange="onChangeCode()">
+
+                <div class="error"  id="msg-code-required">&uarr;  Códico é obrigatório</div>
+            </div>
+
+            <!-- type -->
+            <div>
+                <div><label for="">Type</label></div>
+
+                <input type="text" name="type" id="type" onchange="onChangeType()">
+
+                <div class="error" id="msg-type-required">&uarr;  Type é obrigatório</div>
+            </div>
+
+            <!-- status -->
+            <div id="divType">
+                <div><label for="">Status</label></div>
+
+                <input type="radio" name="type" id="expense" checked> <label for="expense">Pendente</label>
+
+                <input type="radio" name="type" id="income"> <label for="income">Entregue</label>
+            </div>
+           
+
+            <!-- data -->
+            <div>
+                <div><label for="">Data</label></div>
+
+                <input type="date" name="date" id="date" placeholder="BR014942779BR" onchange="onChangeDate()">
+
+                <div  class="error" id="msg-date-required">&uarr; Data é obrigatório/Inválida</div>
+            </div>
+
+            
+
+            
+        </form>
+
+    </main>
+    
+    <footer>
+        <div>
+            <button id="btnConcluir" onclick="saveOperation()" disabled class="btnConcluir">Concluir</button>
+        </div>
+        
+        <!-- <div>
+            <button id="remove" class="btnRemove">Remover</button>
+        </div>
+     -->
+     
+    </footer>
+    
+
+
+    <script src="script/auth-guard.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-firestore-compat.js"></script>
+    <script src="script/logout.js"></script>
+    <script src="script/loading.js"></script>
+    <script src="script/firebaseConfig.js"></script>
+    <script src="script/operation.js"></script>
+    
+    
+    
+</body >
+
+</html>
